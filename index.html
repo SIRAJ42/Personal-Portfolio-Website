@@ -9,6 +9,7 @@
 
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <title>Personal PortFolio | PIXEL&CODEX | SIRAJ DAHRI</title>
 </head>
@@ -104,9 +105,7 @@
                             <i class='bx bxl-html5 skills__icon'></i>
                             <span class="skills__name">HTML5</span>
                         </div>
-                        <div class="skills__bar skills__html">
-
-                        </div>
+                        <div class="skills__bar skills__html"></div>
                         <div>
                             <span class="skills__percentage">95%</span>
                         </div>
@@ -116,9 +115,7 @@
                             <i class='bx bxl-css3 skills__icon'></i>
                             <span class="skills__name">CSS3 with Bootstrap</span>
                         </div>
-                        <div class="skills__bar skills__css">
-
-                        </div>
+                        <div class="skills__bar skills__css"></div>
                         <div>
                             <span class="skills__percentage">95%</span>
                         </div>
@@ -126,47 +123,39 @@
                     <div class="skills__data">
                         <div class="skills__names">
                             <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
+                            <span class="skills__name">JavaScript</span>
                         </div>
-                        <div class="skills__bar skills__js">
-
-                        </div>
+                        <div class="skills__bar skills__js"></div>
                         <div>
                             <span class="skills__percentage">95%</span>
                         </div>
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
+                            <i class="devicon-php-plain colored skills__icon"></i>
                             <span class="skills__name">PHP</span>
                         </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
+                        <div class="skills__bar skills__php"></div>
                         <div>
-                            <span class="skills__percentage">95%</span>
+                            <span class="skills__percentage">90%</span>
                         </div>
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
+                            <i class="devicon-cplusplus-plain colored skills__icon"></i>
                             <span class="skills__name">C++</span>
                         </div>
-                        <div class="skills__bar skills__clanguage">
-
-                        </div>
+                        <div class="skills__bar skills__cpp"></div>
                         <div>
                             <span class="skills__percentage">80%</span>
                         </div>
                     </div>
                     <div class="skills__data">
                         <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">PYTHON</span>
+                            <i class="devicon-python-plain colored skills__icon"></i>
+                            <span class="skills__name">Python</span>
                         </div>
-                        <div class="skills__bar skills__python">
-
-                        </div>
+                        <div class="skills__bar skills__python"></div>
                         <div>
                             <span class="skills__percentage">95%</span>
                         </div>
@@ -210,11 +199,17 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form" method="post">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
-                    <a href="#home"><input onclick="submitbtn()" type="submit" value="Submit" class="contact__button button"></a>
+                <form class="contact__form" id="contactForm">
+
+                    <input type="text" id="name" placeholder="Name" class="contact__input" required>
+
+                    <input type="email" id="email" placeholder="Email" class="contact__input" required>
+
+                    <textarea id="message" placeholder="Message" cols="0" rows="10" class="contact__input"
+                        required></textarea>
+
+                    <input type="submit" value="Submit" class="contact__button button">
+
                 </form>
             </div>
         </section>
